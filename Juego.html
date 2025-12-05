@@ -3,6 +3,7 @@
 <head>
     <title>Tragamonedas</title>
     <link href="estilos/estilos.css" rel="stylesheet" type="text/css">
+    <script src="Js/juego.js"></script>
 </head>
 
 <body>
@@ -11,14 +12,44 @@
     </div>
 
     <div class="boton">
-        <button class="btn_girar">
-            <img src="imagenes/boton/moneda.png" class="img_ boton">
+        <button class="btn_girar" onclick="jugar()">
+            <img src="imagenes/boton/moneda.png" class="img_boton">
         </button>
     </div>
 
     <div id="tablero" class="tablero">
 
+        <div class="espacio">
+            <img id="espacio1" src="imagenes/Limon.png">
+        </div>
+
+        <div class="espacio">
+            <img id="espacio2" src="imagenes/Siete.png">
+        </div>
+
+        <div class="espacio">
+            <img id="espacio3" src="imagenes/Estrella.png">
+        </div>
+
     </div>
+
+    <h2 class="Resultados">Resultado</h2>
+    
+    <table class="Estadisticas">
+
+        <tr>
+            <th>ganaste</th>
+            <th>casi </th>
+            <th>perdiste</th>
+        </tr>
+        <tr>
+            <td id="t_ganaste">0</td>
+            <td id="t_casi">0</td>
+            <td id="t_perdiste">0</td>
+        </tr>
+
+    </table>
+
 
 </body>
 
